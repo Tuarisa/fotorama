@@ -285,6 +285,15 @@ $blue: mix(#00d1ff, #008ed6);
   }
 }
 
+.fotorama__thumb span{
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  font-size: 10px;
+  top: 10px;
+  z-index: 111;
+}
+
 .fotorama__thumb-border {
   position: absolute;
   z-index: 9;

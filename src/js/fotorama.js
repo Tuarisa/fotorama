@@ -639,6 +639,7 @@ jQuery.Fotorama = function ($fotorama, opts) {
       } else if (type === 'navThumb') {
         addNavFrameEvents(frame);
         frameData.$wrap = $frame.children(':first');
+        frameData.$wrap.append("<span>"+dataFrame.caption+"</span>");
         $navThumbFrame = $navThumbFrame.add($frame);
         if (dataFrame.video) {
           frameData.$wrap.append($videoPlay.clone());

@@ -265,7 +265,7 @@ jQuery.Fotorama = function ($fotorama, opts) {
       classes[FLAG ? 'add' : 'remove'].push(value);
     }
 
-    if (size > 1 || opts.enableifsingleframe) {
+    if (size > 0 || opts.enableifsingleframe) {
       o_nav = opts.nav;
       o_navTop = opts.navposition === 'top';
       classes.remove.push(selectClass);

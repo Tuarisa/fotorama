@@ -525,7 +525,7 @@ jQuery.Fotorama = function ($fotorama, opts) {
           }
         }, 0);
 
-        if(type === 'navThumb'){
+        if(type === 'navThumb' && opts.fancy){
           $frame.replaceWith(function(index, oldHTML){
             return $("<a>")
             .attr('class',$(this).attr('class'))

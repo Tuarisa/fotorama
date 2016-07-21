@@ -524,6 +524,16 @@ jQuery.Fotorama = function ($fotorama, opts) {
             reset();
           }
         }, 0);
+
+        if(type === 'navThumb'){
+          $frame.replaceWith(function(index, oldHTML){
+            return $("<a>")
+            .attr('class',$(this).attr('class'))
+            .attr('rel',stamp)
+            .attr('href',src)
+            .html(oldHTML);
+          });
+        }
       }
 
       if (!src) {
